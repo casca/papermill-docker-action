@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
-cd  /github/home
-
+whoami
+cd /github/workspace
 papermill $1 $1
