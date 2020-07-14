@@ -1,0 +1,13 @@
+# action.yml
+name: 'Papermill'
+description: 'Run papermill to update a jupyter notebook'
+inputs:
+  notebook:
+    description: 'Notebook file'
+    required: true
+    default: 'notebook.ipynb'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.notebook }}
