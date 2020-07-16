@@ -8,6 +8,6 @@ inputs:
     default: 'notebook.ipynb'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://cascandaliato/papermill-docker-action:latest'
   args:
     - ${{ inputs.notebook }}
